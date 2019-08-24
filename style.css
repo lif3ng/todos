@@ -1,0 +1,19 @@
+.issue {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+    line-height: 1.6em;
+}
+
+.issue + .issue {
+    margin-top: 10px;
+}
+
+.label {
+    padding: 0 5px;
+    border-radius: 2px;
+}
+
+.label + .label {
+    margin-left: 5px;
+}
