@@ -8,4 +8,5 @@
 <div id="done">
 </div>
 
+<link media="all" rel="stylesheet" href="style.css" />
 <script src="./index.js"></script>
