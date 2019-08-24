@@ -26,9 +26,9 @@ function render(div, query) {
         let labelStr = labels.map(({ name, color }) =>
           `<span class="label" style="border:1px solid #${color}">${name}</span>`
         ).join('')
-        const timeStr = query.state === 'closed' ? closed_at : create_at;
+        const timeStr = query.state === 'closed' ? closed_at : created_at;
         return `<div class="issue">
-    <a href="${html_url}" traget="_blank">${title}</a>
+    <div><a href="${html_url}" traget="_blank">${title}</a></div>
     <span class="labels">
         ${labelStr}
     </span><span class="time">${new Date(timeStr).toLocaleString()}</span>
