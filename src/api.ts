@@ -44,6 +44,11 @@ export async function fetchIssue(number: number): Promise<Issue> {
   return res.json()
 }
 
+export async function fetchComments(issueNumber: number): Promise<import('./types').Comment[]> {
+  const res = await fetch(`${BASE}/issues/${issueNumber}/comments?per_page=100`, { headers: HEADERS })
+  return res.json()
+}
+
 export async function fetchLabels(): Promise<Label[]> {
   const res = await fetch(`${BASE}/labels?per_page=100`, { headers: HEADERS })
   return res.json()
